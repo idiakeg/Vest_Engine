@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VestEngine™</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="welcome_container">
+				<div class="welcome_container_image">
+					<img src="./images/Illustration.png" alt="Illustration" />
+				</div>
+			</div>
+			<div class="form_section">
+				<!-- form section -->
+				<form id="form" class="form" novalidate>
+					<!-- form logo -->
+					<div class="form_logo">
+						<img src="./images/VestEngine™.jpg" alt="vest_Engine" />
+					</div>
+					<!-- form heading -->
+					<h1 class="form_header">Sign in to your account</h1>
+					<!-- form inputs -->
+					<div class="form_email_input">
+						<input
+							id="email"
+							type="email"
+							name="email"
+							placeholder="Email"
+							required
+						/>
+					</div>
+					<span id="email_error_message" class="form_error_message"
+						>invalid email</span
+					>
+					<div class="form_password_input">
+						<input
+							id="password"
+							type="password"
+							name="password"
+							placeholder="Password"
+							required
+						/>
+						<!-- eye icon -->
+						<svg
+							class="form_eye_icon"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+						>
+							<g data-name="Layer 2">
+								<g data-name="eye">
+									<rect opacity="0" />
+									<path
+										d="M21.87 11.5c-.64-1.11-4.16-6.68-10.14-6.5-5.53.14-8.73 5-9.6 6.5a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25c5.53-.14 8.74-5 9.6-6.5a1 1 0 0 0 0-1zM12.22 17c-4.31.1-7.12-3.59-8-5 1-1.61 3.61-4.9 7.61-5 4.29-.11 7.11 3.59 8 5-1.03 1.61-3.61 4.9-7.61 5z"
+									/>
+									<path
+										d="M12 8.5a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 12 8.5zm0 5a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5z"
+									/>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<!-- error_message -->
+					<span id="password_error_message" class="form_error_message"
+						>invalid password</span
+					>
+					<!-- button -->
+					<input class="form_btn" type="submit" value="Sign in" />
+					<!-- forgot password -->
+					<a href="./forgot_password.html" class="form_forgot_password"
+						>I forgot my password</a
+					>
+					<!-- Sign up -->
+					<p class="form_sign_up_redirect">
+						Don't have an account? <a href="#">Sign up</a>
+					</p>
+				</form>
+				<!-- kinda footer section -->
+				<footer class="footer">
+					&copy;
+					<ul>
+						<li>VastEngine</li>
+						<li>Contact</li>
+						<li>Privacy Policy</li>
+						<li>Terms & Conditions</li>
+					</ul>
+				</footer>
+			</div>
+		</div>
+
+		<script src="./app.js"></script>
+	</body>
+</html>

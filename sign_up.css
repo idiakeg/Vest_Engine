@@ -1,0 +1,23 @@
+:root {
+	font-size: 62.5%;
+
+	--form_input_width: 37.5rem;
+	--form_input_width_md: 20rem;
+	--form_input_height: 4rem;
+	--form_input_height_md: 3.5rem;
+}
+
+.form {
+	min-width: 467px;
+}
+
+.form_name_container,
+.form_country_input {
+	width: var(--form_input_width);
+	height: var(--form_input_height);
+}
+
+.form_name_container {
+	display: flex;
+	gap: 1rem;
+}

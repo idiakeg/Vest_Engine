@@ -3,8 +3,18 @@
 
 	--form_input_width: 37.5rem;
 	--form_input_width_md: 20rem;
-	--form_input_height: 4rem;
-	--form_input_height_md: 3.5rem;
+	--form_input_height: 3.5rem;
+	--form_input_height_md: 3rem;
+
+	--legend_font_size: 1.1rem;
+	--legend_margin_left: 5rem;
+
+	--select_icon_width: 1.6rem;
+	--select_icon_height: 0.727rem;
+
+	--border-radius_md: 0.5rem;
+
+	--font-color_1: #444;
 }
 
 .form {
@@ -20,4 +30,60 @@
 .form_name_container {
 	display: flex;
 	gap: 1rem;
+}
+
+/* fieldset */
+.form_country_input {
+	position: relative;
+}
+
+.form_country_input fieldset {
+	border-radius: var(--border-radius_md);
+	border: 1px solid var(--font-color_1);
+}
+
+.form_country_input legend {
+	margin-left: var(--legend_margin_left);
+	font-size: var(--legend_font_size);
+}
+
+.form_country_input select {
+	border: none;
+	outline: none;
+	width: 100%;
+	appearance: none;
+	cursor: pointer;
+}
+
+.form_country_icon {
+	cursor: pointer;
+	width: var(--select_icon_width);
+	height: var(--select_icon_height);
+	position: absolute;
+	right: var(--select_icon_width);
+	top: 50%;
+	transform: translateY(-50%);
+}
+.form_country_icon img {
+	max-width: 100%;
+	display: inline-block;
+}
+
+/* Terms and condition */
+.terms_and_condition_input {
+	display: flex;
+	/* border: 1px solid red; */
+	gap: 1rem;
+}
+
+/* .terms_and_condition_input > * {
+	border: 1px solid green;
+} */
+
+.terms_and_condition_input input {
+	width: 1.8rem;
+}
+
+.terms_and_condition_input label {
+	font-size: 1.2rem;
 }

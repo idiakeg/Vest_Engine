@@ -25,6 +25,8 @@
 					<!-- form heading -->
 					<h1 class="form_header">Lets get started</h1>
 					<!-- form inputs -->
+
+					<!-- name inputs -->
 					<div class="form_name_container">
 						<div class="form_name_input">
 							<input
@@ -43,6 +45,7 @@
 							/>
 						</div>
 					</div>
+					<!-- email inputs -->
 					<div class="form_email_input">
 						<input
 							id="email"
@@ -52,6 +55,7 @@
 							required
 						/>
 					</div>
+					<!-- country input -->
 					<div class="form_country_input">
 						<fieldset>
 							<legend>Country</legend>
@@ -62,11 +66,35 @@
 								<option value="Tanzania">Tanzania</option>
 								<option value="Lesotho">Lesotho</option>
 							</select>
+							<div class="form_country_icon">
+								<img src="./images/select_dropdown_icon.jpg" alt="" />
+							</div>
 						</fieldset>
 					</div>
-					<span id="email_error_message" class="form_error_message"
-						>invalid email</span
-					>
+
+					<!-- Business name -->
+					<div class="form_email_input">
+						<input
+							id="email"
+							type="text"
+							name="business_email"
+							placeholder="Business Name"
+							required
+						/>
+					</div>
+
+					<!-- Business email -->
+					<div class="form_email_input">
+						<input
+							id="email"
+							type="email"
+							name="work_email"
+							placeholder="Work Email"
+							required
+						/>
+					</div>
+
+					<!-- password input -->
 					<div class="form_password_input">
 						<input
 							id="password"
@@ -94,19 +122,26 @@
 							</g>
 						</svg>
 					</div>
+
+					<!-- Terms and condition -->
+					<div class="terms_and_condition_input">
+						<input id="terms_and_condition" type="checkbox" required />
+						<label for="terms_and_condition"
+							>I have read, understood and I agree to VestEngine's
+							<a href="#">Privacy Policy</a> and
+							<a href="#">Terms and conditions</a>.
+						</label>
+					</div>
 					<!-- error_message -->
-					<span id="password_error_message" class="form_error_message"
-						>invalid password</span
+					<span id="email_error_message" class="form_error_message"
+						>invalid email</span
 					>
 					<!-- button -->
 					<input class="form_btn" type="submit" value="Create an account" />
-					<!-- forgot password -->
-					<a href="./forgot_password.html" class="form_forgot_password"
-						>I forgot my password</a
-					>
+
 					<!-- Sign up -->
 					<p class="form_sign_up_redirect">
-						Don't have an account? <a href="#">Sign up</a>
+						Already have an account? <a href="./index.html">Sign in here</a>
 					</p>
 				</form>
 				<!-- kinda footer section -->

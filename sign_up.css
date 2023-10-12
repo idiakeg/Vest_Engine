@@ -2,9 +2,12 @@
 	font-size: 62.5%;
 
 	--form_input_width: 37.5rem;
-	--form_input_width_md: 20rem;
-	--form_input_height: 3.5rem;
-	--form_input_height_md: 3rem;
+	--form_input_width_md: 35rem;
+	--form_input_width_sm: 25rem;
+	--form_input_height: 4rem;
+	--form_input_height_md: 3.5rem;
+
+	--form_logo-width_sm: 8.8rem;
 
 	--legend_font_size: 1.1rem;
 	--legend_margin_left: 5rem;
@@ -17,8 +20,12 @@
 	--font-color_1: #444;
 }
 
+.form_section {
+	padding: 10rem 2rem;
+}
+
 .form {
-	min-width: 467px;
+	max-width: 467px;
 }
 
 .form_name_container,
@@ -35,6 +42,7 @@
 /* fieldset */
 .form_country_input {
 	position: relative;
+	margin-bottom: 0.7rem;
 }
 
 .form_country_input fieldset {
@@ -72,18 +80,74 @@
 /* Terms and condition */
 .terms_and_condition_input {
 	display: flex;
-	/* border: 1px solid red; */
 	gap: 1rem;
 }
 
-/* .terms_and_condition_input > * {
-	border: 1px solid green;
-} */
-
 .terms_and_condition_input input {
 	width: 1.8rem;
+	margin-top: 0;
 }
 
 .terms_and_condition_input label {
 	font-size: 1.2rem;
+}
+
+/* submit button */
+input[type="submit"] {
+	margin-bottom: 2rem;
+	margin-top: 1.5rem;
+}
+
+.footer {
+	bottom: 1%;
+}
+
+@media screen and (max-width: 560px) {
+	.form {
+		padding: 2rem;
+	}
+
+	.form_name_container {
+		flex-direction: column;
+		height: auto;
+		gap: 2rem;
+	}
+
+	.form_name_container input {
+		height: var(--form_input_height);
+	}
+
+	.terms_and_condition_input {
+		width: var(--form_input_width);
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.form_password_input,
+	.form_email_input,
+	input[type="submit"],
+	.form_name_container,
+	.form_country_input,
+	.terms_and_condition_input {
+		width: var(--form_input_width_md);
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.form_password_input,
+	.form_email_input,
+	input[type="submit"],
+	.form_name_container,
+	.form_country_input,
+	.terms_and_condition_input {
+		width: var(--form_input_width_sm);
+	}
+
+	.form_logo {
+		max-width: var(--form_logo-width_sm);
+	}
+
+	.form_section {
+		padding: 10rem 0;
+	}
 }
